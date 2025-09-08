@@ -1,0 +1,68 @@
+body{
+  margin:0;
+  background:#0b1020;
+  color:#e7ecff;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif
+}
+.wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px
+}
+.card{
+  background:#121832;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:16px;
+  min-width:320px;
+  text-align:center;
+  box-shadow:0 10px 24px rgba(0,0,0,.35)
+}
+h1{
+  margin:6px 0 12px
+}
+.row{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center
+}
+#textbox{
+  width:70%;
+  text-align:center;
+  font-size:1.4em;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;background:#0b1020;
+  color:#e7ecff;padding:8px
+}
+.choices{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin:6px 0;
+  color:#a9b1d6
+}
+.choices label{
+  font-size:1rem;
+  font-weight:600
+}
+button{
+  margin-top:10px;
+  color:#0b1020;
+  background:#7c9cff;
+  font-weight:700;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer
+}
+button:hover{
+  background:#5f7ee6
+}
+#result{
+  font-size:1.4em;
+  font-weight:800;
+  margin-top:10px
+}

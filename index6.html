@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Pokémon Fetcher</h1>
+    <div style="margin-bottom: 8px;">
+      <a href="hub.html" style="padding:6px 10px; background:#18224b; color:#e7ecff; text-decoration:none; border-radius:8px; border:1px solid rgba(255,255,255,.08)">← Back</a>
+    </div>
+    <div class="card">
+      <div class="row">
+        <input type="text" id="pokemonName" placeholder="Enter pokemon name">
+        <button onclick="fetchData()">Fetch</button>
+      </div>
+      <img id="pokemonSprite" src="" alt="pokemon Sprite" style="display:none;">
+      <div id="error" class="error"></div>
+    </div>
+  </div>
+  <script src="project6.js"></script>
+</body>
+</html>

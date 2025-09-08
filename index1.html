@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Roll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div style="margin-bottom: 8px;">
+      <a href="hub.html" style="padding:6px 10px; background:#18224b; color:#e7ecff; text-decoration:none; border-radius:8px; border:1px solid rgba(255,255,255,.08)">← Back</a>
+    </div>
+    <h1>Dice Roll — 2 Players</h1>
+    <p>Each player rolls the same number of dice. Higher total wins the round.</p>
+    <label>No. of dice each:</label>
+    <input type="number" id="noofDice" value="1" min="1">
+    <div style="margin-top:8px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
+      <button onclick="rollDice('p1')">P1 Roll</button>
+      <button onclick="rollDice('p2')">P2 Roll</button>
+      <button onclick="nextRound()">Next Round</button>
+      <button onclick="resetMatch()">Reset</button>
+    </div>
+    <div id="round" style="margin-top:8px;">Round: <span id="roundNo">1</span></div>
+    <div class="row">
+      <div class="col">
+        <h3>P1</h3>
+        <div id="nodice_p1"></div>
+        <div id="noimage_p1"></div>
+        <div>Total: <span id="total_p1">0</span></div>
+        <div>Score: <span id="score_p1">0</span></div>
+      </div>
+      <div class="col">
+        <h3>P2</h3>
+        <div id="nodice_p2"></div>
+        <div id="noimage_p2"></div>
+        <div>Total: <span id="total_p2">0</span></div>
+        <div>Score: <span id="score_p2">0</span></div>
+      </div>
+    </div>
+  </div>
+    <script src="project.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+  margin:0;
+  background:#0b1020;
+  color:#e7ecff;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif
+}
+h1{
+  margin:20px 0;
+  text-align:center
+}
+.grid{
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+  justify-content:center
+}
+.panel{
+  background:#121832;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+  padding:16px;
+  min-width:240px
+}
+.panel h3{
+  margin:4px 0 12px
+}
+button{
+  appearance:none;
+  border:none;
+  background:#18224b;
+  color:#e7ecff;
+  padding:14px 16px;
+  border-radius:12px;
+  font-size:2rem;
+  cursor:pointer;
+  margin:6px
+}
+button:hover{
+  background:#22306b
+}
+.actions{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-top:8px
+}
+#outcome{
+  font-size:1.2rem;
+  text-align:center;
+  margin-top:10px
+}
+.score{
+  margin:6px 0;
+  text-align:center
+}
+#playerScore{
+  color:#7cffa1
+}
+#computerScore{
+  color:#ff9c9c
+}
+.pick{
+  color:#a9b1d6;
+  margin-top:6px
+}

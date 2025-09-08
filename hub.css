@@ -1,0 +1,17 @@
+:root{--bg:#0b1020;--card:#121832;--text:#e7ecff;--muted:#a9b1d6;--primary:#7c9cff;--ring:rgba(124,156,255,.35)}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1200px 600px at 10% -10%,#14204f,transparent),radial-gradient(1000px 600px at 110% 10%,#1a2a6f,transparent),var(--bg)}
+.site-header{text-align:center;padding:48px 16px 24px}
+.site-header h1{margin:0;font-size:40px}
+.tagline{color:var(--muted);margin-top:8px}
+.container{max-width:1100px;margin:0 auto;padding:0 16px 48px}
+.section-title{margin:32px 0 12px;font-size:18px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{display:block;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)),var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;text-decoration:none;color:var(--text);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.16);box-shadow:0 10px 24px rgba(0,0,0,.35),0 0 0 4px var(--ring)}
+.card-body{padding:18px}
+.card h3{margin:0 0 6px}
+.card p{margin:0;color:var(--muted)}
+.site-footer{text-align:center;color:var(--muted);padding:32px 16px 48px}
+

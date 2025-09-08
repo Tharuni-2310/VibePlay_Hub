@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Game</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="rng-wrap">
+    <div style="margin-bottom: 8px;">
+      <a href="hub.html" style="padding:6px 10px; background:#18224b; color:#e7ecff; text-decoration:none; border-radius:8px; border:1px solid rgba(255,255,255,.08)">← Back</a>
+    </div>
+    <h1>Random Number Game</h1>
+    <p>Guess a number between 1 and 100.</p>
+    <div class="rng-card">
+      <input id="guess" type="number" min="1" max="100" placeholder="Your guess" />
+      <button id="submit">Guess</button>
+      <div id="feedback"></div>
+      <div id="attempts">Attempts: 0</div>
+      <button id="restart" class="hidden">Play Again</button>
+    </div>
+  </div>
+  <script src="project2.js"></script>
+</body>
+</html>

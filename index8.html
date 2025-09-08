@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🐤 Flappy Bird</title>
+  <link rel="stylesheet" href="style8.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🐤 Flappy Bird</h1>
+    <div style="margin: 8px 0; display:flex; gap:8px;">
+      <a href="hub.html" style="padding:6px 10px; background:#18224b; color:#e7ecff; text-decoration:none; border-radius:8px; border:1px solid rgba(255,255,255,.08)">← Back</a>
+      <button onclick="resetGame()" style="padding:6px 10px; background:#18224b; color:#e7ecff; border-radius:8px; border:1px solid rgba(255,255,255,.08)">Reset</button>
+    </div>
+    <p class="instructions">Press <strong>Spacebar</strong> to flap. Avoid the pipes!</p>
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    <div class="scoreboard">Score: <span id="score">0</span></div>
+  </div>
+  <script src="project8.js"></script>
+</body>
+</html>

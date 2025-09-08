@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissor</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <h1>Rock-Paper-Scissors — 2 Players <a href="hub.html" style="padding:6px 10px; background:#18224b; color:#e7ecff; text-decoration:none; border-radius:8px; border:1px solid rgba(255,255,255,.08); font-size:1rem; margin-left:12px;">← Back</a></h1>
+  <div class="grid">
+    <div class="panel">
+      <h3>Player 1</h3>
+      <div>
+        <button onclick="select('p1','Rock')">👊</button>
+        <button onclick="select('p1','Paper')">🖐️</button>
+        <button onclick="select('p1','Scissor')">✌️</button>
+      </div>
+      <div id="p1_pick" class="pick">Pick: —</div>
+    </div>
+    <div class="panel">
+      <h3>Player 2</h3>
+      <div>
+        <button onclick="select('p2','Rock')">👊</button>
+        <button onclick="select('p2','Paper')">🖐️</button>
+        <button onclick="select('p2','Scissor')">✌️</button>
+      </div>
+      <div id="p2_pick" class="pick">Pick: —</div>
+    </div>
+  </div>
+  <div class="actions">
+    <button onclick="reveal()">Reveal</button>
+    <button onclick="clearPicks()">Clear</button>
+  </div>
+  <div id="outcome"></div>
+  <div class="score">P1 Score: <span id="playerScore">0</span></div>
+  <div class="score">P2 Score: <span id="computerScore">0</span></div>
+  <script src="project4.js"></script>
+ 
+</body>
+</html>
